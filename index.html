@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EventPulse PRD</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: #f9fafb;
+    color: #111;
+  }
+
+  h1, h2, h3 {
+    color: #1a56db;
+  }
+
+  h1 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background: #eef2ff;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>⏰ EventPulse – Product Requirements Document</h1>
+<p><strong>Version:</strong> v1.0 | <strong>Date:</strong> April 2026 | <strong>Status:</strong> Draft</p>
+
+<section>
+<h2>1. Product Overview</h2>
+
+<div class="card">
+<h3>What the Product Does</h3>
+<p>EventPulse is a lightweight Progressive Web App that allows users to create events and receive notifications at 24h, 6h, and 30m before the event. Works offline with no backend.</p>
+</div>
+
+<div class="card">
+<h3>Target Users</h3>
+<ul>
+<li>Students tracking deadlines</li>
+<li>Professionals managing meetings</li>
+<li>Privacy-focused users</li>
+<li>Users on low-end devices</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Core Value</h3>
+<ul>
+<li>Proactive notifications</li>
+<li>Offline-first</li>
+<li>No login required</li>
+<li>Fast & lightweight</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>2. Goals</h2>
+<ul>
+<li>Create event in under 10 seconds</li>
+<li>Notifications at 24h, 6h, 30m</li>
+<li>Offline functionality</li>
+<li>Installable PWA</li>
+<li>Local storage via IndexedDB</li>
+</ul>
+</section>
+
+<section>
+<h2>3. Core Features</h2>
+
+<div class="card">
+<h3>Event Management</h3>
+<ul>
+<li>Create, edit, delete events</li>
+<li>Sort by date</li>
+<li>View upcoming/past events</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Notifications</h3>
+<table>
+<tr><th>Reminder</th><th>Time</th></tr>
+<tr><td>Reminder 1</td><td>24 hours before</td></tr>
+<tr><td>Reminder 2</td><td>6 hours before</td></tr>
+<tr><td>Reminder 3</td><td>30 minutes before</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h3>UI/UX</h3>
+<ul>
+<li>Dark/Light mode</li>
+<li>Mobile-first design</li>
+<li>3 screens: Home, Add Event, Settings</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Offline Support</h3>
+<ul>
+<li>Works without internet</li>
+<li>Uses service worker caching</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>4. Functional Requirements</h2>
+<ul>
+<li>Validate event title and date</li>
+<li>Store events in IndexedDB</li>
+<li>Schedule notifications on save</li>
+<li>Cancel notifications on delete</li>
+<li>Prevent duplicate notifications</li>
+</ul>
+</section>
+
+<section>
+<h2>5. Non-Functional Requirements</h2>
+<ul>
+<li>Load time under 1.5s</li>
+<li>Bundle size under 150KB</li>
+<li>Accessible UI (WCAG compliant)</li>
+<li>Works on Chrome, Edge, Safari</li>
+</ul>
+</section>
+
+<section>
+<h2>6. Technical Architecture</h2>
+<ul>
+<li>Frontend: HTML, CSS, JavaScript</li>
+<li>Storage: IndexedDB</li>
+<li>PWA: Service Worker + Manifest</li>
+</ul>
+</section>
+
+<section>
+<h2>7. User Flow</h2>
+<ol>
+<li>User opens app</li>
+<li>Adds event</li>
+<li>Grants notification permission</li>
+<li>Receives reminders</li>
+</ol>
+</section>
+
+<section>
+<h2>8. Future Enhancements</h2>
+<ul>
+<li>Cloud sync</li>
+<li>Recurring events</li>
+<li>Calendar view</li>
+<li>Event sharing</li>
+</ul>
+</section>
+
+<footer>
+<hr>
+<p><strong>EventPulse PRD v1.0</strong> | April 2026</p>
+</footer>
+
+</body>
+</html>
